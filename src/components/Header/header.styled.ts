@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   padding: 0 7rem;
   border-bottom: 2px solid ${({ theme }) => theme.colors.textPrimary}1F;
-  z-index: 1;
+  z-index: 9999;
 
   @media (max-width: 1025px) {
     padding: 0 4rem;
