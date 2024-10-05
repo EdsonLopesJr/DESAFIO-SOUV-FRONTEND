@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
   background-color: ${({ theme }) => theme.colors.background};
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 72px;
   display: flex;
   align-items: center;

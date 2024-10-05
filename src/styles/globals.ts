@@ -14,7 +14,9 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: ${({ theme }) => theme.typography.secondaryFont}, sans-serif;
     line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;    
+    max-width: 100%;
+    max-height: 100%;
   }
 
   h1 {
