@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   background-color: ${({ theme }) => theme.colors.background};
+  position: fixed;
   width: 100vw;
   height: 72px;
   display: flex;
@@ -9,7 +10,6 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   padding: 0 7rem;
   border-bottom: 2px solid ${({ theme }) => theme.colors.textPrimary}1F;
-  position: relative;
 
   @media (max-width: 1025px) {
     padding: 0 4rem;
@@ -30,6 +30,7 @@ export const Nav = styled.nav`
 
 export const NavItem = styled.a`
   font-weight: 600;
+  font-size: 1rem;
   position: relative;
   color: ${({ theme }) => theme.colors.dark};
 
@@ -67,6 +68,24 @@ export const MenuIcon = styled.div`
 
   @media (max-width: 900px) {
     display: block;
+  }
+`;
+
+export const ThemeToggleButton = styled.button`
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: ${({ theme }) =>
+    `linear-gradient(360deg, ${theme.colors.dark}, ${theme.colors.primary}, ${theme.colors.secondary})`};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+
+  &:hover {
+    opacity: 0.8;
   }
 `;
 
