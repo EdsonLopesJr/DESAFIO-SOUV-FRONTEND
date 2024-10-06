@@ -1,13 +1,8 @@
-import Link from "next/link";
+import { Appointment } from "@/components/Appointment";
 import React from "react";
 
-export default function Appointment() {
-  return (
-    <div>
-      <h1>Agendar um Horário</h1>
-      <Link href="/" passHref>
-        Voltar
-      </Link>
-    </div>
-  );
-}
+const AppointmentPage: React.FC = () => {
+  return <Appointment />;
+};
+
+export default AppointmentPage;

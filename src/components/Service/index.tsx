@@ -3,7 +3,7 @@ import { Card } from "./components/Card";
 import * as S from "./service.styled";
 
 export const Service: React.FC = () => {
-  const { services, loading } = useService();
+  const { services } = useService();
   return (
     <S.Wrapper id="service">
       <S.ContentWrapper>
