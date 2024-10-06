@@ -1,6 +1,5 @@
 import Image from "next/image";
 import * as S from "./contact.styled";
-import whatsappIcon from "@/assets/icon/whatsapp.svg";
 import whatsappButtonIcon from "@/assets/icon/button/whatsapp.svg";
 import phoneIcon from "@/assets/icon/phone.svg";
 import mapIcon from "@/assets/icon/map-pin.svg";
