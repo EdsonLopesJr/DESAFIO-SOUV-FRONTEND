@@ -55,11 +55,13 @@ export const TestimonialProvider: React.FC<{ children: ReactNode }> = ({
   );
 };
 
-export const useService = () => {
+export const useTestimonial = () => {
   const context = useContext(TestimonialContext);
 
   if (!context) {
-    throw new Error("useService deve ser usado dentro de um ServiceProvider");
+    throw new Error(
+      "useTestimonial deve ser usado dentro de um TestimonialProvider"
+    );
   }
 
   return context;
