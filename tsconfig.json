@@ -17,5 +17,9 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "baseUrl": "./src", // Isso define o diretório base para o alias
+  "paths": {
+    "@/*": ["*"] // Isso define o alias para ser usado no código
+  }
 }
