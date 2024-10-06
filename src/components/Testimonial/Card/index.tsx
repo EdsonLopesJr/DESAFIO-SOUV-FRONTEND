@@ -1,14 +1,15 @@
 import Image from "next/image";
 import * as S from "./card.styled";
 import aspas from "@/assets/icon/aspas.svg";
-import profile from "@/assets/images/profile.png";
+import defaultProfile from "@/assets/images/default.png";
 
 export interface CardProps {
   message: string;
   name: string;
+  profile: string;
 }
 
-export const Card: React.FC<CardProps> = ({ message, name }) => {
+export const Card: React.FC<CardProps> = ({ message, name, profile }) => {
   return (
     <S.CardWrapper>
       <S.DescriptionWrapper>
@@ -16,7 +17,12 @@ export const Card: React.FC<CardProps> = ({ message, name }) => {
         <S.Description>{message}</S.Description>
       </S.DescriptionWrapper>
       <S.ProfileWrapper>
-        <Image src={profile} alt="profile" />
+        <Image
+          src={profile ?? defaultProfile}
+          alt="profile"
+          width={32}
+          height={32}
+        />
         <S.NameProfile>{name}</S.NameProfile>
       </S.ProfileWrapper>
     </S.CardWrapper>
